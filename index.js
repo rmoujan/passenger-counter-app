@@ -17,5 +17,14 @@ function save() {
 	// saveEl.innerText += " " + countStr;
 	saveEl.textContent += countStr;
 }
+
+
+function reset() {
+	count = 0;
+	console.log("the reset button was clicked");
+	console.log(count);
+	document.getElementById("output").innerText  = count;
+}
+
 //Note : innerText and textContent do the same work but textContent is better
 //cuz As a best practice, it is recommended to use textContent instead of innerText since textContent follows the DOM specification and provides a more consistent behavior across different browsers.
