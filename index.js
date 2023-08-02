@@ -8,21 +8,14 @@ function increment()
 	count += 1;
 	document.getElementById("output").innerText  = count;
 }
-//let message = "Previous entries: ";
-// Create a new paragraph element
-// var newParagraph = document.createElement("p");
-// newParagraph.textContent = "Previous entries: ";
-// function save() {
-// 	console.log("the save button was clicked");
-// 	console.log(count);
-// 	newParagraph.textContent += count + "-";
-// 	//document.getElementById("save-btn").innerText = message + count + "-";
-// }
-
-let saveEl = count + "-";
+//get the para by his id and change it
+let saveEl  = document.getElementById("para");
 function save() {
-	let saveEl = count + "-";
+	let countStr = count + " - ";
 	console.log("the save button was clicked");
 	console.log(count);
-	document.getElementById("para").innerText +=saveEl;
+	// saveEl.innerText += " " + countStr;
+	saveEl.textContent += countStr;
 }
+//Note : innerText and textContent do the same work but textContent is better
+//cuz As a best practice, it is recommended to use textContent instead of innerText since textContent follows the DOM specification and provides a more consistent behavior across different browsers.
