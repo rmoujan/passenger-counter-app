@@ -1,23 +1,27 @@
 body {
-	/* Background color and image */
-	background-color: #f0f0f0; /* Change to your desired background color */
-	/*background-image: url('sub.jpg'); /* Optional: Set a background image */
-  
-	/* Text color and font */
-	color: #0b0909; /* Change to your desired text color */
-	font-family: Arial, sans-serif; /* Change to your desired font family */
-  
-	/* Spacing and alignment */
-	margin: 0; /* Remove default body margin */
-	padding: 20px; /* Add padding to the body */
-	text-align: center; /* Center the text within the body */
-  
-	/* Other styles */
-	line-height: 1.6; /* Adjust line height for better readability */
+
+	background-color: #f0f0f0; 
+	background-image: url('images/station.jpg');
+	background-size:cover;
+	color: #0b0909;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	line-height: 1.6;
 	font-weight: bold;
+	height: 100vh;
   }
   
-  /* Base styles for the button */
+.container{
+	background: white;
+	max-width:80%;
+	margin:auto;
+	border:3px solid black;
+	border-radius:10px;
+
+}
+
 .button {
 	display: inline-block;
 	padding: 10px 20px;
